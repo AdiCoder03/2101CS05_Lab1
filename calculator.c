@@ -1,5 +1,14 @@
 #include<stdio.h>
 
+void Add()
+{
+  printf("Enter two space-separated numbers: ");
+  double x, y, z;
+  scanf("%lf%lf", &x, &y);
+  z = x + y;
+  printf("%lf + %lf = %lf", x, y, z);
+}
+
 int main()
 {
   int ch = 1;
