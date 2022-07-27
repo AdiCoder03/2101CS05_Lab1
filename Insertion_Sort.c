@@ -1,7 +1,4 @@
-#include <math.h>
-#include <stdio.h>
-
-int main()
+void Insertion_Sort()
 {
   //accepting the size and the elements of the array to be sorted
 	int n;
@@ -26,6 +23,4 @@ int main()
   printf("The sorted array is as follows: ");
   for(int i = 0; i<n; i++) printf("%d ", arr[i]);
   printf("\n");
-
-	return 0;
 }

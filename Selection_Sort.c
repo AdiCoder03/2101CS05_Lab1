@@ -8,7 +8,7 @@ void swap(int * x, int * y)
   *y = tmp;
 }
 
-int main()
+void Selection_Sort()
 {
   //accepting the size and the elements of the array to be sorted
 	int n;
@@ -34,6 +34,4 @@ int main()
   printf("The sorted array is as follows: ");
   for(int i = 0; i<n; i++) printf("%d ", arr[i]);
   printf("\n");
-
-	return 0;
 }
