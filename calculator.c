@@ -36,6 +36,17 @@ void Multiplication()
   scanf("%s", &a);
 }
 
+void Quotient()
+{
+  printf("Enter two space-separated numbers: ");
+  long long x, y, z;
+  scanf("%ld%ld", &x, &y);
+  z = x / y;
+  printf("%ld * %ld = %ld\n", x, y, z);
+  printf("\n Press enter to continue...");
+  char a[10];
+  scanf("%s", &a);
+}
 
 int main()
 {
