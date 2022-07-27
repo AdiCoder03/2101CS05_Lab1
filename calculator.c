@@ -1,4 +1,6 @@
 #include<stdio.h>
+#include<math.h>
+typedef long long ll;
 
 void Add()
 {
@@ -7,8 +9,8 @@ void Add()
   scanf("%lf%lf", &x, &y);
   z = x + y;
   printf("%lf + %lf = %lf\n", x, y, z);
-  printf("\n Press enter to continue...");
-  char a[10];
+  printf("\n Enter any character and press enter to continue...");
+  char a;
   scanf("%s", &a);
 }
 
@@ -19,8 +21,8 @@ void Subtract()
   scanf("%lf%lf", &x, &y);
   z = x - y;
   printf("%lf - %lf = %lf\n", x, y, z);
-  printf("\n Press enter to continue...");
-  char a[10];
+  printf("\n Enter any character and press enter to continue...");
+  char a;
   scanf("%s", &a);
 }
 
@@ -31,12 +33,52 @@ void Multiplication()
   scanf("%lf%lf", &x, &y);
   z = x * y;
   printf("%lf * %lf = %lf\n", x, y, z);
-  printf("\n Press enter to continue...");
-  char a[10];
+  printf("\n Enter any character and press enter to continue...");
+  char a;
   scanf("%s", &a);
 }
 
 void Quotient()
+{
+  printf("Enter two space-separated integers: ");
+  double x, y;
+  long long z;
+  scanf("%lf%lf", &x, &y);
+  if(y == 0)
+  {
+    printf("Invalid operation. Division by zero is not defined.\n");
+  }
+  else
+  {
+    z = floor(x / y);
+    printf("%lld \\ %lld = %lld\n", (ll)x, (ll)y, z);
+  }
+  printf("\n Enter any character and press enter to continue...");
+  char a;
+  scanf("%s", &a);
+}
+
+void Remainder()
+{
+  printf("Enter two space-separated integers: ");
+  double x, y;
+  long long z;
+  scanf("%lf%lf", &x, &y);
+  if(y == 0)
+  {
+    printf("Invalid operation. Division by zero is not defined.\n");
+  }
+  else
+  {
+    z = floor(x/y);
+    z = x - y * z;
+    printf("%lld MOD %lld = %lld\n", (ll)x, (ll)y, z);
+  }
+  printf("\n Enter any character and press enter to continue...");
+  char a;
+  scanf("%s", &a);
+}
+
 {
   printf("Enter two space-separated numbers: ");
   long long x, y, z;
