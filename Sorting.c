@@ -194,3 +194,33 @@ void Quick_Sort()
     for(int i = 0; i<n; i++) printf("%d ", arr[i]);
     printf("\n");
 }
+
+int main()
+{
+    int ch = 1;
+    while(ch >= 1 && ch <= 5)
+    {
+        printf("\n1. Insertion Sort\n2. Selection Sort\n3. Bubble Sort\n4. Merge Sort\n5. Quick Sort\n");
+        printf("Enter the number corresponding to your choice(Enter any number other than the above to exit): ");
+        scanf("%d", &ch);
+        switch(ch)
+        {
+            case 1:
+            Insertion_Sort();
+            break;
+            case 2:
+            Selection_Sort();
+            break;
+            case 3:
+            Bubble_Sort();
+            break;
+            case 4:
+            Merge_Sort();
+            break;
+            case 5:
+            Quick_Sort();
+            break;
+        }
+    }
+    return 0;
+}
