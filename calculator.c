@@ -6,8 +6,24 @@ void Add()
   double x, y, z;
   scanf("%lf%lf", &x, &y);
   z = x + y;
-  printf("%lf + %lf = %lf", x, y, z);
+  printf("%lf + %lf = %lf\n", x, y, z);
+  printf("\n Press enter to continue...");
+  char a[10];
+  scanf("%s", &a);
 }
+
+void Subtract()
+{
+  printf("Enter two space-separated numbers: ");
+  double x, y, z;
+  scanf("%lf%lf", &x, &y);
+  z = x - y;
+  printf("%lf - %lf = %lf\n", x, y, z);
+  printf("\n Press enter to continue...");
+  char a[10];
+  scanf("%s", &a);
+}
+
 
 int main()
 {
