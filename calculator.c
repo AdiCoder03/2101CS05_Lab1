@@ -79,14 +79,15 @@ void Remainder()
   scanf("%s", &a);
 }
 
+void Divide()
 {
   printf("Enter two space-separated numbers: ");
-  long long x, y, z;
-  scanf("%ld%ld", &x, &y);
+  double x, y, z;
+  scanf("%lf%lf", &x, &y);
   z = x / y;
-  printf("%ld * %ld = %ld\n", x, y, z);
-  printf("\n Press enter to continue...");
-  char a[10];
+  printf("%lf / %lf = %lf\n", x, y, z);
+  printf("\n Enter any character and press enter to continue...");
+  char a;
   scanf("%s", &a);
 }
 
